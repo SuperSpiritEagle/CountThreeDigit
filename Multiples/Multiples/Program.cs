@@ -10,25 +10,25 @@ namespace Multiples
             int maxNumber = 28;
             int beginningRange = 100;
             int endRange = 1000;
-            int n;
-            int countThreeDigit = 0;
+            int numberN;
+            int countSum = 0;
 
             Random random = new Random();
 
-            n = random.Next(minNumber, maxNumber);
-            Console.WriteLine(n);
+            numberN = random.Next(minNumber, maxNumber);
+            Console.WriteLine(numberN);
 
-            for (int i = n; i <endRange; i+=n)
+            for (int i = numberN; i <endRange; i+=numberN)
             {
                 if (i >= beginningRange)
                 {
                     Console.WriteLine(i);
-                    countThreeDigit++;
+                    countSum++;
                 }
             }
 
             Console.WriteLine();
-            Console.WriteLine($"Количество трехзначных кратных чисел числа: {n} = {countThreeDigit}");
+            Console.WriteLine($"Количество трехзначных кратных чисел числа: {numberN} = {countSum}");
         }
     }
 }
