@@ -11,7 +11,7 @@ namespace Multiples
             int beginningRange = 100;
             int endRange = 1000;
             int numberN;
-            int countSum = 0;
+            int sum = 0;
 
             Random random = new Random();
 
@@ -23,12 +23,12 @@ namespace Multiples
                 if (i >= beginningRange)
                 {
                     Console.WriteLine(i);
-                    countSum++;
+                    sum++;
                 }
             }
 
             Console.WriteLine();
-            Console.WriteLine($"Количество трехзначных кратных чисел числа: {numberN} = {countSum}");
+            Console.WriteLine($"Количество трехзначных кратных чисел числа: {numberN} = {sum}");
         }
     }
 }
